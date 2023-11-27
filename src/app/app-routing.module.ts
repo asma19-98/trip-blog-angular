@@ -8,7 +8,8 @@ import { DestinationComponent } from './destination/destination.component';
 import { DestinationDetailsComponent } from './destination-details/destination-details.component';
 
 const routes: Routes = [
-  {path:'',component:AddBlogComponent}
+ { path: '', redirectTo: 'home', pathMatch: 'full' }, {path:'home',component:HomeComponent},{path:'AddBlog',component:AddBlogComponent},{path:'Blog',component:BlogComponent}
+  ,{path:'BlogDetails',component:BlogDetailsComponent},{path:'Destination',component:DestinationComponent},{path:'DestinationDetails',component:DestinationDetailsComponent}
 ];
 
 @NgModule({
