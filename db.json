@@ -1,0 +1,142 @@
+{
+  "destinations": [
+    {
+      "id": 1,
+      "name": "France",
+   
+        "nameOfCity": "Paris",
+        "hotels": [
+          {
+            "id": 1,
+            "name": "Luxury Hotel Paris",
+            "rating": 4,
+            "blog": "A luxurious stay with breathtaking views of the city.",
+            "date":"12/05/2020"
+          },
+          {
+            "id": 2,
+            "name": "Chic Boutique Hotel",
+            "rating": 4,
+            "blog": "Experience Parisian charm in a chic boutique setting.",
+            "date":"12/05/2020"
+          }
+        ],
+        "restaurants": [
+          {
+            "id": 1,
+            "name": "Le Petit Chef",
+            "rating": 5,
+            "blog": "Experience exquisite French cuisine with a touch of creativity.",
+            "date":"12/05/2020"
+          },
+          {
+            "id": 2,
+            "name": "La Belle Epoque",
+            "rating": 4,
+            "blog": "Step back in time with classic French dishes in a charming setting.",
+            "date":"12/05/2020"
+          }
+        ],
+        "attractions": [
+          {
+            "id": 1,
+            "name": "Eiffel Tower",
+            "rating": 4,
+            "blog": "Iconic landmark offering panoramic views of Paris.",
+            "date":"12/05/2020"
+          },
+          {
+            "id": 2,
+            "name": "Montmartre",
+            "rating": 2,
+            "blog": "Explore the bohemian atmosphere and artistic history of Montmartre.",
+            "date":"12/05/2020"
+          }
+        ],
+        "museums": [
+          {
+            "id": 1,
+            "name": "Louvre Museum",
+            "rating": 4,
+            "blog": "Home to thousands of works of art, including the Mona Lisa."
+          },
+          {
+            "id": 2,
+            "name": "Musée d'Orsay",
+            "rating": 4,
+            "blog": "Discover Impressionist and Post-Impressionist masterpieces."
+          }
+        ]
+     },
+    {
+      "id": 2,
+      "name": "Japan",
+         "nameOfCity": "Tokyo",
+        "hotels": [
+          {
+            "id": 1,
+            "name": "Sakura Hotel",
+            "rating": 4,
+            "blog": "Immerse yourself in Japanese hospitality and culture.",
+            "date":"12/05/2020"
+          },
+          {
+            "id": 2,
+            "name": "Modern Business Inn",
+            "rating": 4,
+            "blog": "A comfortable stay for the business traveler in the heart of Tokyo.",
+            "date":"12/05/2020"
+          }
+        ],
+        "restaurants": [
+          {
+            "id": 1,
+            "name": "Sushi Paradise",
+            "rating": 4,
+            "blog": "Delight your taste buds with the freshest sushi in town.",
+            "date":"12/05/2020"
+          },
+          {
+            "id": 2,
+            "name": "Ramen Haven",
+            "rating": 4,
+            "blog": "Indulge in authentic Japanese ramen in a cozy atmosphere.",
+            "date":"12/05/2020"
+          }
+        ],
+        "attractions": [
+          {
+            "id": 1,
+            "name": "Tokyo Tower",
+            "rating": 4,
+            "blog": "A landmark offering stunning views of Tokyo skyline.",
+            "date":"12/05/2020"
+          },
+          {
+            "id": 2,
+            "name": "Asakusa Shrine",
+            "rating": 4,
+            "blog": "Experience the rich cultural heritage of Asakusa.",
+            "date":"12/05/2020"
+          }
+        ],
+        "museums": [
+          {
+            "id": 1,
+            "name": "Tokyo National Museum",
+            "rating": 4,
+            "blog": "Explore the rich history and culture of Japan.",
+            "date":"12/05/2020"
+          },
+          {
+            "id": 2,
+            "name": "TeamLab Borderless",
+            "rating": 4,
+            "blog": "Immersive digital art installations for a unique museum experience.",
+            "date":"12/05/2020"
+          }
+        ]
+      }
+   ],
+  "users":[]
+}

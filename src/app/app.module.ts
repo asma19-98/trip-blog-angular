@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { AddBlogComponent } from './add-blog/add-blog.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { DestinationComponent } from './destination/destination.component';
 import { DestinationDetailsComponent } from './destination-details/destination-details.component';
+import { FormsModule } from '@angular/forms';
+import { FilterPipePipe } from './filter-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { DestinationDetailsComponent } from './destination-details/destination-d
     AddBlogComponent,
     BlogDetailsComponent,
     DestinationComponent,
-    DestinationDetailsComponent
+    DestinationDetailsComponent,
+    FilterPipePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

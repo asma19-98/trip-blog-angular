@@ -8,12 +8,17 @@ import { DestinationComponent } from './destination/destination.component';
 import { DestinationDetailsComponent } from './destination-details/destination-details.component';
 
 const routes: Routes = [
- { path: '', redirectTo: 'home', pathMatch: 'full' }, {path:'home',component:HomeComponent},{path:'AddBlog',component:AddBlogComponent},{path:'Blog',component:BlogComponent}
-  ,{path:'BlogDetails',component:BlogDetailsComponent},{path:'Destination',component:DestinationComponent},{path:'DestinationDetails',component:DestinationDetailsComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'addblog', component: AddBlogComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'blogdetails', component: BlogDetailsComponent },
+  { path: 'destination', component: DestinationComponent },
+  { path: 'destinationdetails', component: DestinationDetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
