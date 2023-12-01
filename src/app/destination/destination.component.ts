@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataServiceService } from '../data-service.service';
+import { DestinationServiceService } from '../Services/destination-service.service';
 import { Destination } from '../Models/destination.model';
 
 @Component({
@@ -16,7 +16,7 @@ export class DestinationComponent implements OnInit {
   city: string = '';
   category: string = '';
 
-  constructor(public _shared: DataServiceService) {}
+  constructor(public _shared: DestinationServiceService) {}
   ngOnInit(): void {
     this._shared.getDestinations().subscribe(
       (res) => {
