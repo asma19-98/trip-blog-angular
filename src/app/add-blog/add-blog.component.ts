@@ -7,13 +7,13 @@ import { BlogService } from '../Services/blog.service';
   styleUrls: ['./add-blog.component.css']
 })
 export class AddBlogComponent {
-  constructor AddBlogComponent(private _shared:BlogService){
+  constructor (private _shared:BlogService){
     
   }
   submit(event: any) {
     const newData = event.data;
     // Perform create operation using the data service
-    this._shared.createNewFournisseur(newData).subscribe(
+    this._shared.addBlog(newData).subscribe(
       (response) => {
         console.log('Row inserted successfully:', response);
       },
