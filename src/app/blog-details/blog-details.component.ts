@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Blog } from '../Models/Blog';
 
 @Component({
   selector: 'app-blog-details',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-details.component.css']
 })
 export class BlogDetailsComponent {
-
+  @Input()  Blogchild !:Blog;
+  @Output() responseEmitter = new EventEmitter<Blog>();
+// incrementLike(p: Product) {
+//   p.like++;
+// }
+OnLike(){
+  this.responseEmitter.emit(this.Blogchild);
+  console.log('done!');
+  }
 }

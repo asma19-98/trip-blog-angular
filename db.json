@@ -137,23 +137,86 @@
       ]
     }
   ],
- 
   "Blogs": [
     {
       "id": 1,
       "title": "Discovering the Beauty of Paris",
       "author": "Traveler Explorer",
       "description": "Join me on an enchanting journey to the city of love and lights – Paris. From the iconic Eiffel Tower to the charming streets of Montmartre, this blog explores the beauty and culture of one of the most captivating cities in the world.",
-      "date": "2023-12-01",
-      "location": "Paris, France"
+      "date": "August 12, 2018",
+      "destination": "Paris, France",
+      "like": 3,
+      "image": "assets/images/image_3.jpg"
     },
     {
       "id": 2,
       "title": "Tokyo: A Blend of Tradition and Modernity",
       "author": "Wanderlust Nomad",
       "content": "Embark on a journey to Tokyo, where tradition meets modernity in perfect harmony. From the historic Asakusa Shrine to the futuristic TeamLab Borderless museum, this blog captures the essence of Japan's vibrant capital.",
-      "date": "2023-12-15",
-      "location": "Tokyo, Japan"
+      "date": "August 12, 2018",
+      "destination": "Tokyo, Japan",
+      "like": 1,
+      "image": "assets/images/image_2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "A Weekend Getaway to Barcelona",
+      "author": "Adventurous Traveler",
+      "description": "Explore the vibrant city of Barcelona, known for its unique architecture, delicious cuisine, and lively atmosphere. This blog takes you on a journey through the historic streets of the Gothic Quarter to the breathtaking views from Park Güell.",
+      "date": "2023-01-15",
+      "destination": "Barcelona, Spain",
+      "like": 5,
+      "image": "assets/images/image_6.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Safari Adventure in Serengeti National Park",
+      "author": "Wildlife Explorer",
+      "description": "Embark on an unforgettable safari in the heart of Serengeti National Park. Witness the incredible wildlife, from majestic lions to graceful giraffes, in their natural habitat. This blog captures the raw beauty of the African savannah.",
+      "date": "2023-03-20",
+      "destination": "Serengeti National Park, Tanzania",
+      "like": 8,
+      "image": "assets/images/image_1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Magical Winter in Lapland",
+      "author": "Snow Enthusiast",
+      "description": "Experience the enchantment of Lapland during winter. From the dancing Northern Lights to the thrill of husky sledding, this blog captures the magic of the snowy landscapes and the warmth of the local culture.",
+      "date": "2023-02-10",
+      "destination": "Lapland, Finland",
+      "like": 12,
+      "image": "assets/images/image_5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Cultural Delights in Kyoto",
+      "author": "Cultural Explorer",
+      "description": "Immerse yourself in the rich cultural heritage of Kyoto, Japan. From historic temples to traditional tea ceremonies, this blog explores the timeless beauty and traditions of one of Japan's most beloved cities.",
+      "date": "2023-04-05",
+      "destination": "Kyoto, Japan",
+      "like": 9,
+      "image": "assets/images/image_8.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Sunset Serenity in Santorini",
+      "author": "Island Dreamer",
+      "description": "Escape to the picturesque island of Santorini and witness breathtaking sunsets over the Aegean Sea. This blog takes you on a journey through the charming villages, crystal-clear waters, and iconic white-washed architecture.",
+      "date": "2023-06-18",
+      "destination": "Santorini, Greece",
+      "like": 15,
+      "image": "assets/images/image_4.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Jungle Trekking in the Amazon Rainforest",
+      "author": "Nature Explorer",
+      "description": "Embark on an adventure deep into the Amazon Rainforest. From vibrant wildlife to the sounds of the jungle, this blog captures the essence of one of the world's most biodiverse ecosystems.",
+      "date": "2023-08-02",
+      "destination": "São Paulo, Brazil",
+      "like": 7,
+      "image": "assets/images/image_7.jpg"
     }
   ]
 }

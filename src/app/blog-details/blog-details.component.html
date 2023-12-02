@@ -1,13 +1,15 @@
 <div class="blog-entry align-self-stretch">
-  <a href="blog-single.html" class="block-20" style="background-image: url('assets/images/image_1.jpg');">
+  <a [href]="'blog-single.html'" class="block-20" [ngStyle]="{ 'background-image': 'url(' + Blogchild.image + ')' }">
   </a>
+  
+  
   <div class="text p-4 d-block">
-    <span class="tag">Tips, Travel</span>
-    <h3 class="heading mt-3"><a href="#">8 Best homestay in Philippines that you don't miss out</a></h3>
+    <span class="tag">{{ Blogchild.title }}</span>
+    <h3 class="heading mt-3"><a href="#">{{ Blogchild.destination }}</a></h3>
     <div class="meta mb-3">
-      <div><a href="#">August 12, 2018</a></div>
-      <div><a href="#">Admin</a></div>
-      <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+      <div><a href="#">{{ Blogchild.date }}</a></div>
+      <div><a href="#">{{Blogchild.author}}</a></div>
+      <div><span class="icon-heart" (click)="OnLike()"></span> {{Blogchild.like}}</div>
     </div>
   </div>
 </div>
