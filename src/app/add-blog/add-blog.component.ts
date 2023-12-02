@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BlogService } from '../Services/blog.service';
 
 @Component({
   selector: 'app-add-blog',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-blog.component.css']
 })
 export class AddBlogComponent {
-
+  constructor AddBlogComponent(private _shared:BlogService){
+    
+  }
+  submit(event: any) {
+    const newData = event.data;
+    // Perform create operation using the data service
+    this._shared.createNewFournisseur(newData).subscribe(
+      (response) => {
+        console.log('Row inserted successfully:', response);
+      },
+      (error) => {
+        console.error('Error inserting row:', error);
+      }
+    );
+  }
 }
