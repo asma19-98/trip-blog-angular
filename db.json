@@ -1,142 +1,165 @@
 {
-  "destinations": [
-    {
-      "id": 1,
-      "name": "France",
-      "nameOfCity": "Paris",
-      "hotels": [
-        {
-          "id": 1,
-          "name": "Luxury Hotel Paris",
-          "rating": 4,
-          "blog": "A luxurious stay with breathtaking views of the city.",
-          "date": "12/05/2020"
-        },
-        {
-          "id": 2,
-          "name": "Chic Boutique Hotel",
-          "rating": 4,
-          "blog": "Experience Parisian charm in a chic boutique setting.",
-          "date": "12/05/2020"
-        }
-      ],
-      "restaurants": [
-        {
-          "id": 1,
-          "name": "Le Petit Chef",
-          "rating": 5,
-          "blog": "Experience exquisite French cuisine with a touch of creativity.",
-          "date": "12/05/2020"
-        },
-        {
-          "id": 2,
-          "name": "La Belle Epoque",
-          "rating": 4,
-          "blog": "Step back in time with classic French dishes in a charming setting.",
-          "date": "12/05/2020"
-        }
-      ],
-      "attractions": [
-        {
-          "id": 1,
-          "name": "Eiffel Tower",
-          "rating": 4,
-          "blog": "Iconic landmark offering panoramic views of Paris.",
-          "date": "12/05/2020"
-        },
-        {
-          "id": 2,
-          "name": "Montmartre",
-          "rating": 2,
-          "blog": "Explore the bohemian atmosphere and artistic history of Montmartre.",
-          "date": "12/05/2020"
-        }
-      ],
-      "museums": [
-        {
-          "id": 1,
-          "name": "Louvre Museum",
-          "rating": 4,
-          "blog": "Home to thousands of works of art, including the Mona Lisa."
-        },
-        {
-          "id": 2,
-          "name": "Musée d'Orsay",
-          "rating": 4,
-          "blog": "Discover Impressionist and Post-Impressionist masterpieces."
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Japan",
-      "nameOfCity": "Tokyo",
-      "hotels": [
-        {
-          "id": 1,
-          "name": "Sakura Hotel",
-          "rating": 4,
-          "blog": "Immerse yourself in Japanese hospitality and culture.",
-          "date": "12/05/2020"
-        },
-        {
-          "id": 2,
-          "name": "Modern Business Inn",
-          "rating": 4,
-          "blog": "A comfortable stay for the business traveler in the heart of Tokyo.",
-          "date": "12/05/2020"
-        }
-      ],
-      "restaurants": [
-        {
-          "id": 1,
-          "name": "Sushi Paradise",
-          "rating": 4,
-          "blog": "Delight your taste buds with the freshest sushi in town.",
-          "date": "12/05/2020"
-        },
-        {
-          "id": 2,
-          "name": "Ramen Haven",
-          "rating": 4,
-          "blog": "Indulge in authentic Japanese ramen in a cozy atmosphere.",
-          "date": "12/05/2020"
-        }
-      ],
-      "attractions": [
-        {
-          "id": 1,
-          "name": "Tokyo Tower",
-          "rating": 4,
-          "blog": "A landmark offering stunning views of Tokyo skyline.",
-          "date": "12/05/2020"
-        },
-        {
-          "id": 2,
-          "name": "Asakusa Shrine",
-          "rating": 4,
-          "blog": "Experience the rich cultural heritage of Asakusa.",
-          "date": "12/05/2020"
-        }
-      ],
-      "museums": [
-        {
-          "id": 1,
-          "name": "Tokyo National Museum",
-          "rating": 4,
-          "blog": "Explore the rich history and culture of Japan.",
-          "date": "12/05/2020"
-        },
-        {
-          "id": 2,
-          "name": "TeamLab Borderless",
-          "rating": 4,
-          "blog": "Immersive digital art installations for a unique museum experience.",
-          "date": "12/05/2020"
-        }
-      ]
-    }
-  ],
+  
+    "destinations": [
+      {
+        "id": 1,
+        "name": "France",
+        "nameOfCity": "Paris",
+        "places": [
+          {
+            "id": 1,
+            "type": "hotel",
+            "name": "Luxury Hotel Paris",
+            "rating": 3,
+            "blog": "A luxurious stay with breathtaking views of the city.",
+            "date": "12/05/2020",
+            "image": "assets/images/hotel-1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "hotel",
+            "name": "Chic Boutique Hotel",
+            "rating": 4,
+            "blog": "Experience Parisian charm in a chic boutique setting.",
+            "date": "12/05/2020",
+            "image": "assets/images/hotel-2.jpg"
+          },
+          {
+            "id": 3,
+            "type": "restaurant",
+            "name": "Le Petit Chef",
+            "rating": 5,
+            "blog": "Experience exquisite French cuisine with a touch of creativity.",
+            "date": "12/05/2020",
+            "image": "assets/images/restaurant-1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "restaurant",
+            "name": "La Belle Epoque",
+            "rating": 4,
+            "blog": "Step back in time with classic French dishes in a charming setting.",
+            "date": "12/05/2020",
+            "image": "assets/images/restaurant-2.jpg"
+          },
+          {
+            "id": 5,
+            "type": "attraction",
+            "name": "Eiffel Tower",
+            "rating": 4,
+            "blog": "Iconic landmark offering panoramic views of Paris.",
+            "date": "12/05/2020",
+            "image": "assets/images/destination-1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "attraction",
+            "name": "Montmartre",
+            "rating": 2,
+            "blog": "Explore the bohemian atmosphere and artistic history of Montmartre.",
+            "date": "12/05/2020",
+            "image": "assets/images/destination-2.jpg"
+          },
+          {
+            "id": 7,
+            "type": "museum",
+            "name": "Louvre Museum",
+            "rating": 4,
+            "blog": "Home to thousands of works of art, including the Mona Lisa.",
+            "image": "assets/images/destination-5.jpg"
+          },
+          {
+            "id": 8,
+            "type": "museum",
+            "name": "Musée d'Orsay",
+            "rating": 4,
+            "blog": "Discover Impressionist and Post-Impressionist masterpieces.",
+            "image": "assets/images/destination-6.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Japan",
+        "nameOfCity": "Tokyo",
+        "places": [
+          {
+            "id": 1,
+            "type": "hotel",
+            "name": "Sakura Hotel",
+            "rating": 4,
+            "blog": "Immerse yourself in Japanese hospitality and culture.",
+            "date": "12/05/2020",
+            "image": "assets/images/image_3.jpg"
+          },
+          {
+            "id": 2,
+            "type": "hotel",
+            "name": "Modern Business Inn",
+            "rating": 4,
+            "blog": "A comfortable stay for the business traveler in the heart of Tokyo.",
+            "date": "12/05/2020",
+            "image": "assets/images/hotel-1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "restaurant",
+            "name": "Sushi Paradise",
+            "rating": 4,
+            "blog": "Delight your taste buds with the freshest sushi in town.",
+            "date": "12/05/2020",
+            "image": "assets/images/hotel-2.jpg"
+          },
+          {
+            "id": 4,
+            "type": "restaurant",
+            "name": "Ramen Haven",
+            "rating": 4,
+            "blog": "Indulge in authentic Japanese ramen in a cozy atmosphere.",
+            "date": "12/05/2020",
+            "image": "assets/images/restaurant-1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "attraction",
+            "name": "Tokyo Tower",
+            "rating": 3,
+            "blog": "A landmark offering stunning views of Tokyo skyline.",
+            "date": "12/05/2020",
+            "image": "assets/images/restaurant-2.jpg"
+          },
+          {
+            "id": 6,
+            "type": "attraction",
+            "name": "Asakusa Shrine",
+            "rating": 2,
+            "blog": "Experience the rich cultural heritage of Asakusa.",
+            "date": "12/05/2020",
+            "image": "assets/images/destination-6.jpg"
+          },
+          {
+            "id": 7,
+            "type": "museum",
+            "name": "Tokyo National Museum",
+            "rating": 1,
+            "blog": "Explore the rich history and culture of Japan.",
+            "date": "12/05/2020",
+            "image": "assets/images/destination-5.jpg"
+          },
+          {
+            "id": 8,
+            "type": "museum",
+            "name": "TeamLab Borderless",
+            "rating": 3,
+            "blog": "Immersive digital art installations for a unique museum experience.",
+            "date": "12/05/2020",
+            "image": "assets/images/destination-2.jpg"
+          }
+        ]
+      }
+    ],
+  
+  
   "Blogs": [
     {
       "id": 1,
@@ -155,7 +178,7 @@
       "content": "Embark on a journey to Tokyo, where tradition meets modernity in perfect harmony. From the historic Asakusa Shrine to the futuristic TeamLab Borderless museum, this blog captures the essence of Japan's vibrant capital.",
       "date": "August 12, 2018",
       "destination": "Tokyo, Japan",
-      "like": 1,
+      "like": 3,
       "image": "assets/images/image_2.jpg"
     },
     {
@@ -217,12 +240,6 @@
       "destination": "São Paulo, Brazil",
       "like": 7,
       "image": "assets/images/image_7.jpg"
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
     }
   ]
 }

@@ -13,6 +13,7 @@ export class BlogDetailsComponent {
 //   p.like++;
 // }
 OnLike(){
+  this.Blogchild.like = (this.Blogchild.like || 0) + 1;
   this.responseEmitter.emit(this.Blogchild);
   console.log('done!');
   }

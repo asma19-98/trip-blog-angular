@@ -10,6 +10,7 @@ import { BlogService } from '../Services/blog.service';
 export class BlogComponent implements OnInit{
   constructor(private _shared:BlogService){}
   listBlog:Blog[]=[];
+  
   ngOnInit(): void {
     this._shared.getBlog().subscribe((res) => {
       console.log(res);
@@ -20,8 +21,19 @@ export class BlogComponent implements OnInit{
     }
   );
   }
-  incrementLike(p: Blog) {
-    p.like++;
+  incrementLikeForBlog(updatedBlog: Blog) {
+    const index = this.listBlog.findIndex(blog => blog.id === updatedBlog.id);
+    if (index !== -1) {
+      this.listBlog[index] = updatedBlog;
+      this._shared.putBlog(updatedBlog.id, updatedBlog).subscribe(
+        response => {
+          console.log('Blog like count updated on the server:', response);
+        },
+        error => {
+          console.error('Error updating blog like count:', error);
+        }
+      );
+    }
   }
 
 }

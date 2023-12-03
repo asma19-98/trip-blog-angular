@@ -11,7 +11,8 @@ import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { DestinationComponent } from './destination/destination.component';
 import { DestinationDetailsComponent } from './destination-details/destination-details.component';
 import { FormsModule } from '@angular/forms';
-import { FilterPipePipe } from './filter-pipe.pipe';
+import { FilterPipePipe } from './pipes/filter-pipe.pipe';
+import { HoverHighlightDirective } from './directives/hover-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FilterPipePipe } from './filter-pipe.pipe';
     BlogDetailsComponent,
     DestinationComponent,
     DestinationDetailsComponent,
-    FilterPipePipe
+    FilterPipePipe,
+    HoverHighlightDirective
   ],
   imports: [
     BrowserModule,

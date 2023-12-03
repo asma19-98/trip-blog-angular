@@ -1,20 +1,38 @@
-<div class="destination">
-  <a
-    href="#"
-    class="img img-2 d-flex justify-content-center align-items-center"
-    style="background-image: url(assets/images/destination-1.jpg)"
-  >
-    <div class="icon d-flex justify-content-center align-items-center">
-      <span class="icon-search2"></span>
-    </div>
-  </a>
-  <div class="text p-3">
-    <div class="d-flex">
-      <div class="one">
-        <h3><a href="#">Paris, Italy</a></h3>
-      </div>
-    </div>
-    <p>Far far away, behind the word mountains, far from the countries</p>
-    <hr />
-  </div>
+
+<div class="destination" *ngFor="let place of Destinationchild.places" >
+	<a href="#" class="img img-2 d-flex justify-content-center align-items-center" [ngStyle]="{ 'background-image': 'url(' + place.image + ')' }">
+		<div class="icon d-flex justify-content-center align-items-center">
+			<span class="icon-search2"></span>
+		</div>
+	</a>
+	<!-- <a [href]="'blog-single.html'" class="block-20" [ngStyle]="{ 'background-image': 'url(' + Destinationchild.image + ')' }"> -->
+
+	<div class="text p-3" appHoverHighlight [highlightColor]="'lightblue'">
+		<div class="d-flex">
+			<div class="one">
+				<h3><a href="#">{{ place.name }} , {{ place.type }}</a></h3>
+				<p class="rate">
+					<i class="icon-star" *ngFor="let star of stars; let i = index"
+					   [ngClass]="{'icon-star-o': i >= place.rating, 'active': isHovered && i < hoverRating }"
+					   (mouseenter)="onStarHover(i + 1)" (mouseleave)="onMouseLeave()">
+					</i>
+					<span>{{ place.rating }}</span>
+				  </p>
+				<p>{{place.blog}}</p>
+			</div>
+			<br>
+		</div>
+		<hr>
+		<p class="bottom-area d-flex">
+			<span><i class="icon-map-o"></i> {{ Destinationchild.name }}, {{ Destinationchild.nameOfCity }}</span>
+			
+		</p>
+	</div>
 </div>
+<!-- <h3>{{ Destinationchild.name }}, {{ Destinationchild.nameOfCity }}</h3>
+<p>Places:</p>
+<ul>
+  <li *ngFor="let place of Destinationchild.places">
+	{{ place.name }} - {{ place.type }}
+  </li>
+</ul> -->
