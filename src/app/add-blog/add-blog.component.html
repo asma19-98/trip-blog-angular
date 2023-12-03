@@ -54,28 +54,28 @@
             The Title is required
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your name" ngModel required #e="ngModel" />
+            <input type="text" class="form-control" name="author" placeholder="Your name" ngModel required #e="ngModel" />
           </div>
-          <div class="alert alert-danger" *ngIf="l.invalid && l.touched">
+          <div class="alert alert-danger" *ngIf="e.invalid && e.touched">
             The Name is required
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Date" />
+            <input type="text" class="form-control" name="date" placeholder="Date" ngModel required #date="ngModel"/>
           </div>
-          <div class="alert alert-danger" *ngIf="l.invalid && l.touched">
+          <div class="alert alert-danger" *ngIf="date.invalid && date.touched">
             The Date is required
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Destinaton" />
+            <input type="text" class="form-control" name="destination" placeholder="Destination" ngModel required #dest="ngModel" />
           </div>
-          <div class="alert alert-danger" *ngIf="l.invalid && l.touched">
+          <div class="alert alert-danger" *ngIf="dest.invalid && dest.touched">
             The Destination is required
           </div>
           <div class="form-group">
-            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Description"></textarea>
+            <textarea name="" id="" cols="30" rows="7" name="description" class="form-control" placeholder="Description" ngModel required #desc="ngModel"></textarea>
           </div>
           <div class="form-group">
-            <input type="file" id="avatar" name="image" accept="image/png, image/jpeg" class="form-group"/>    
+            <input type="file" id="avatar" name="image" accept="image/png, image/jpeg" class="form-group" ngModel required #img="ngModel"/>    
                 </div>
 
           <div class="form-group">
