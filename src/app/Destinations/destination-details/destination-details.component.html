@@ -8,6 +8,7 @@
 	<!-- <a [href]="'blog-single.html'" class="block-20" [ngStyle]="{ 'background-image': 'url(' + Destinationchild.image + ')' }"> -->
 
 	<div class="text p-3" appHoverHighlight [highlightColor]="'lightblue'">
+		<!--  -->
 		<div class="d-flex">
 			<div class="one">
 				<h3><a href="#">{{ place.name }} , {{ place.type }}</a></h3>
@@ -25,7 +26,7 @@
 		<hr>
 		<p class="bottom-area d-flex">
 			<span><i class="icon-map-o"></i> {{ Destinationchild.name }}, {{ Destinationchild.nameOfCity }}</span>
-			
+			<button class="ml-auto body" (click)="delete()">Delete</button>
 		</p>
 	</div>
 </div>

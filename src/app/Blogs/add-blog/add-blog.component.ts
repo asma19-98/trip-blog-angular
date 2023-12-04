@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { BlogService } from '../Services/blog.service';
 import { NgForm } from '@angular/forms';
-import { Blog } from '../Models/Blog';
+import { Blog } from 'src/app/Models/Blog';
+import { BlogService } from 'src/app/Services/blog.service';
 
 @Component({
   selector: 'app-add-blog',

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DestinationServiceService } from '../Services/destination-service.service';
-import { Destination } from '../Models/destination.model';
-import { Place } from '../Models/Place';
+import { Place } from 'src/app/Models/Place';
+import { Destination } from 'src/app/Models/destination.model';
+import { DestinationServiceService } from 'src/app/Services/destination-service.service';
 
 @Component({
   selector: 'app-destination',
@@ -14,11 +14,15 @@ export class DestinationComponent implements OnInit {
   destinationName: string = '';
   cityName: string = '';
   selectedPlaceType: string = '';
-
+  selectedDestination: any;
   filteredDestinations: Destination[] = [];
 
   constructor(public _shared: DestinationServiceService) {}
   ngOnInit(): void {
+    this.loadData();
+  }
+
+  loadData() {
     this._shared.getDestinations().subscribe(
       (res) => {
         console.log(res);
@@ -29,7 +33,6 @@ export class DestinationComponent implements OnInit {
       }
     );
   }
-
 
   searchDestinations() {
     this.filteredDestinations = this.destinationList
@@ -45,7 +48,6 @@ export class DestinationComponent implements OnInit {
       console.log(this.selectedPlaceType);
       console.log('Filtered Destinations:', this.filteredDestinations);
   }
-  
   private filterPlaces(places: Place[]): Place[] {
     if (!this.selectedPlaceType) {
       return places; // No type selected, include all places
@@ -53,11 +55,18 @@ export class DestinationComponent implements OnInit {
   
     return places.filter(place => place.type === this.selectedPlaceType);
   }
-  
 
-
-
-
-
-  incrementLike(dest: Destination) {}
+  onDeletePlace(event: { destinationId: number, placeId: number }) {
+    const { destinationId, placeId } = event;
+    this._shared.deletePlace(destinationId, placeId).subscribe(
+      () => {
+        console.log('Place deleted successfully.');
+        this.loadData(); // Refresh the data after deletion
+      },
+      (error) => {
+        console.error('Error deleting place:', error);
+      }
+    );
+  }
 }
+

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Blog } from '../Models/Blog';
+import { Blog } from 'src/app/Models/Blog';
 
 @Component({
   selector: 'app-blog-details',

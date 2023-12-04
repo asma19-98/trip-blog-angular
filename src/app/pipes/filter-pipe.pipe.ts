@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipePipe implements PipeTransform {
 
-  transform(destination: any, city: any): string {
-    if (!destination || !city) return '';
-    return `${destination.name} - ${city.name}`;
+  transform(value: string): string {
+    if (!value) return '';
+    return value.charAt(0).toUpperCase() + value.slice(1);
   }
 }
